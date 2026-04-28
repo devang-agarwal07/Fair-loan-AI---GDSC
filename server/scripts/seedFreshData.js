@@ -16,7 +16,7 @@ if (!admin.apps.length) {
   });
 }
 const db = admin.firestore();
-const COLLECTION = 'community_dataset';
+const COLLECTION = 'farmers';  // Must match firebaseDB.js
 
 // Helper: random int between min and max (inclusive)
 const randInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
@@ -226,19 +226,32 @@ function generateEntry(profile) {
 }
 
 async function truncateCollection() {
-  console.log('Truncating existing dataset...');
+  // Delete from the main 'farmers' collection
+  console.log('Truncating farmers collection...');
   const snapshot = await db.collection(COLLECTION).get();
-  const batch = db.batch();
-  let count = 0;
-  snapshot.docs.forEach(doc => {
-    batch.delete(doc.ref);
-    count++;
-  });
-  if (count > 0) {
+  if (snapshot.size > 0) {
+    const batch = db.batch();
+    snapshot.docs.forEach(doc => batch.delete(doc.ref));
     await batch.commit();
-    console.log(`Deleted ${count} existing entries.`);
+    console.log(`Deleted ${snapshot.size} entries from '${COLLECTION}'.`);
   } else {
-    console.log('Collection was already empty.');
+    console.log(`'${COLLECTION}' was already empty.`);
+  }
+
+  // Also clean up the orphaned 'community_dataset' collection if it exists
+  console.log('Cleaning up orphaned community_dataset collection...');
+  const oldSnapshot = await db.collection('community_dataset').get();
+  if (oldSnapshot.size > 0) {
+    // Firestore batch limit is 500, split if needed
+    const docs = oldSnapshot.docs;
+    for (let i = 0; i < docs.length; i += 400) {
+      const batch = db.batch();
+      docs.slice(i, i + 400).forEach(doc => batch.delete(doc.ref));
+      await batch.commit();
+    }
+    console.log(`Deleted ${oldSnapshot.size} entries from 'community_dataset'.`);
+  } else {
+    console.log(`'community_dataset' was already empty.`);
   }
 }
 

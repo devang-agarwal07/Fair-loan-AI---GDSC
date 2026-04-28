@@ -95,8 +95,8 @@ export default function ExploreDataset() {
           {[
             { label: 'Total Entries', value: stats.total_entries, icon: '📊' },
             { label: 'Regions', value: stats.unique_regions, icon: '🗺️' },
-            { label: 'Avg Income', value: `₹${(stats.avg_income / 1000).toFixed(0)}k`, icon: '💰' },
-            { label: 'Avg Wealth Score', value: `${(stats.avg_wealth_score / 1000).toFixed(0)}k`, icon: '📈' },
+            { label: 'Median Income', value: `₹${(stats.avg_income / 1000).toFixed(0)}k`, icon: '💰' },
+            { label: 'Median Wealth Score', value: `${(stats.avg_wealth_score / 1000).toFixed(0)}k`, icon: '📈' },
           ].map((s, i) => (
             <div key={i} className="card p-4 text-center">
               <div className="text-2xl mb-1">{s.icon}</div>
@@ -162,7 +162,7 @@ export default function ExploreDataset() {
                 <YAxis dataKey="region" type="category" tick={{ fontSize: 12, fill: '#78716c' }} axisLine={false} tickLine={false} width={100} />
                 <Tooltip
                   contentStyle={{ background: '#1c1917', border: 'none', borderRadius: '12px', color: '#fff', fontSize: '13px' }}
-                  formatter={(v) => [`${v}k`, 'Avg Wealth Score']}
+                  formatter={(v) => [`${v}k`, 'Wealth Score']}
                 />
                 <Bar dataKey="avgWealth" fill="#059669" radius={[0, 6, 6, 0]} maxBarSize={30} />
               </BarChart>
