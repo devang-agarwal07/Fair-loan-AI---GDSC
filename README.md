@@ -359,7 +359,7 @@ fairloan/
 
 ## 👥 Team
 
-Built for **Google Developer Student Clubs (GDSC) Hackathon 2026**
+Built for **Google Developer Solution Challenge (GDSC) Hackathon 2026**
 
 ---
 
