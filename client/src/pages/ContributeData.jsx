@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import DataQualityAppeal from '../components/DataQualityAppeal';
+import RegionSelector from '../components/RegionSelector';
 
 const CROP_OPTIONS = ['wheat', 'rice', 'cotton', 'sugarcane', 'vegetables', 'pulses', 'other'];
 
@@ -158,10 +159,11 @@ export default function ContributeData() {
 
         {!rejection && (
         <form onSubmit={handleSubmit} className="card p-6 sm:p-8 space-y-5" id="contribute-form">
-          <div>
-            <label className="label-text">Region / District *</label>
-            <input className="input-field" placeholder="e.g., Vidarbha, Maharashtra" value={form.region} onChange={e => set('region', e.target.value)} />
-          </div>
+          <RegionSelector
+            value={form.region}
+            onChange={(val) => set('region', val)}
+            id="contribute-region"
+          />
 
           <div className="grid grid-cols-2 gap-4">
             <div>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import RegionSelector from './RegionSelector';
 
 const CROP_OPTIONS = ['wheat', 'rice', 'cotton', 'sugarcane', 'vegetables', 'pulses', 'other'];
 const LOAN_SOURCES = ['bank', 'microfinance', 'moneylender', 'family'];
@@ -161,11 +162,12 @@ export default function FarmerForm({ onSubmit, loading }) {
             <input className="input-field" placeholder="e.g., Ramesh Kumar" value={form.full_name} onChange={e => set('full_name', e.target.value)} id="input-name" />
           </div>
 
-          <div>
-            <label className="label-text">Region / District *</label>
-            <input className="input-field" placeholder="e.g., Vidarbha, Maharashtra" value={form.region} onChange={e => set('region', e.target.value)} id="input-region" />
-            <FieldError field="region" />
-          </div>
+          <RegionSelector
+              value={form.region}
+              onChange={(val) => set('region', val)}
+              error={errors.region}
+              id="input-region"
+            />
 
           <div className="grid grid-cols-2 gap-4">
             <div>

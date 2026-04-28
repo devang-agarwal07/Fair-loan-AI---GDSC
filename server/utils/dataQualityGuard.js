@@ -59,15 +59,16 @@ function checkCrossFieldConsistency(entry) {
     );
   }
 
-  // Check 2: Tiny land + absurdly high income (without off-season income or assets to explain it)
-  if (land > 0 && land <= 1 && income > land * MAX_INCOME_PER_ACRE) {
+  // Check 2: Income absurdly high relative to land (any size)
+  if (land > 0 && income > land * MAX_INCOME_PER_ACRE) {
     const offSeason = entry.off_season_income || 0;
     const totalAssets = Object.values(entry.assets || {}).reduce((a, b) => a + (Number(b) || 0), 0);
     // Only flag if they also have no off-season income or assets to justify it
     if (offSeason < income * 0.3 && totalAssets < income * 0.5) {
       errors.push(
-        `Income ₹${income.toLocaleString()} is unusually high for only ${land} acre(s) of land ` +
-        `with no significant off-season income or assets to support it.`
+        `Income ₹${income.toLocaleString()} is unusually high for ${land} acre(s) of land ` +
+        `(max expected: ₹${(land * MAX_INCOME_PER_ACRE).toLocaleString()}/year). ` +
+        `No significant off-season income or assets to support this claim.`
       );
     }
   }

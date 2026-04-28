@@ -5,6 +5,22 @@ const { calculateWealthScore } = require('../utils/wealthScorer');
 const { validateDataQuality } = require('../utils/dataQualityGuard');
 const { loadDataset, saveEntry } = require('../utils/firebaseDB');
 
+// Valid Indian states and union territories for region validation
+const VALID_STATES = [
+  'andhra pradesh', 'arunachal pradesh', 'assam', 'bihar', 'chhattisgarh',
+  'goa', 'gujarat', 'haryana', 'himachal pradesh', 'jharkhand', 'karnataka',
+  'kerala', 'madhya pradesh', 'maharashtra', 'manipur', 'meghalaya', 'mizoram',
+  'nagaland', 'odisha', 'punjab', 'rajasthan', 'sikkim', 'tamil nadu',
+  'telangana', 'tripura', 'uttar pradesh', 'uttarakhand', 'west bengal',
+  'delhi', 'jammu and kashmir', 'ladakh', 'chandigarh', 'puducherry',
+  'lakshadweep', 'andaman and nicobar', 'dadra and nagar haveli',
+];
+
+function isValidIndianRegion(region) {
+  const lower = region.toLowerCase();
+  return VALID_STATES.some(state => lower.includes(state));
+}
+
 /**
  * GET /api/dataset
  * Returns all dataset entries (anonymised — no names).
@@ -63,15 +79,22 @@ router.get('/stats', async (req, res) => {
   try {
     const dataset = await loadDataset();
     const regions = [...new Set(dataset.map(e => e.region).filter(Boolean))];
-    const scores = dataset.map(e => calculateWealthScore(e));
-    const incomes = dataset.map(e => e.annual_income_inr || 0);
+    const scores = dataset.map(e => calculateWealthScore(e)).sort((a, b) => a - b);
+    const incomes = dataset.map(e => e.annual_income_inr || 0).sort((a, b) => a - b);
+
+    // Use median instead of mean — resistant to outliers
+    const median = (arr) => {
+      if (arr.length === 0) return 0;
+      const mid = Math.floor(arr.length / 2);
+      return arr.length % 2 !== 0 ? arr[mid] : Math.round((arr[mid - 1] + arr[mid]) / 2);
+    };
 
     res.json({
       success: true,
       total_entries: dataset.length,
       unique_regions: regions.length,
-      avg_income: Math.round(incomes.reduce((a, b) => a + b, 0) / incomes.length) || 0,
-      avg_wealth_score: Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) || 0,
+      avg_income: median(incomes),
+      avg_wealth_score: median(scores),
     });
   } catch (err) {
     res.status(500).json({ error: 'Failed to compute stats' });
@@ -155,6 +178,12 @@ router.post('/', async (req, res) => {
     // Step 2: Basic required-field validation
     if (!entry.region) {
       return res.status(400).json({ error: 'Region is required' });
+    }
+    if (!isValidIndianRegion(entry.region)) {
+      return res.status(400).json({ 
+        error: 'Invalid region. Please select a valid Indian state or district.',
+        hint: 'Use the dropdown to select your region, or enter a format like "District, State".',
+      });
     }
     if (entry.land_size_acres <= 0) {
       return res.status(400).json({ error: 'Land size must be greater than 0' });
