@@ -1,0 +1,948 @@
+[
+  {
+    "id": "v001",
+    "submitted_at": "2026-01-15T08:30:00Z",
+    "region": "Vidarbha, Maharashtra",
+    "land_size_acres": 2.5,
+    "land_ownership": "owned",
+    "crop_types": [
+      "cotton"
+    ],
+    "annual_income_inr": 85000,
+    "income_regularity": "seasonal",
+    "off_season_income": 15000,
+    "total_savings_inr": 12000,
+    "assets": {
+      "livestock_value_inr": 25000,
+      "equipment_value_inr": 8000,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 15000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 2,
+      "total_outstanding_inr": 95000,
+      "sources": [
+        "moneylender",
+        "microfinance"
+      ]
+    },
+    "past_defaults": true,
+    "household_size": 6,
+    "monthly_expenses_inr": 8500,
+    "irrigation_access": false,
+    "market_distance_km": 42,
+    "average_yield_quintals_per_acre": 3.2,
+    "self_reported_wealth_tier": "very poor"
+  },
+  {
+    "id": "v002",
+    "submitted_at": "2026-01-18T10:15:00Z",
+    "region": "Vidarbha, Maharashtra",
+    "land_size_acres": 5,
+    "land_ownership": "owned",
+    "crop_types": [
+      "cotton",
+      "pulses"
+    ],
+    "annual_income_inr": 180000,
+    "income_regularity": "seasonal",
+    "off_season_income": 30000,
+    "total_savings_inr": 45000,
+    "assets": {
+      "livestock_value_inr": 60000,
+      "equipment_value_inr": 35000,
+      "vehicle_value_inr": 50000,
+      "gold_value_inr": 40000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 50000,
+      "sources": [
+        "bank"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 5,
+    "monthly_expenses_inr": 12000,
+    "irrigation_access": true,
+    "market_distance_km": 18,
+    "average_yield_quintals_per_acre": 5.5,
+    "self_reported_wealth_tier": "lower middle"
+  },
+  {
+    "id": "v003",
+    "submitted_at": "2026-01-22T14:45:00Z",
+    "region": "Vidarbha, Maharashtra",
+    "land_size_acres": 1.5,
+    "land_ownership": "leased",
+    "crop_types": [
+      "cotton"
+    ],
+    "annual_income_inr": 55000,
+    "income_regularity": "seasonal",
+    "off_season_income": 20000,
+    "total_savings_inr": 5000,
+    "assets": {
+      "livestock_value_inr": 15000,
+      "equipment_value_inr": 3000,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 8000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 3,
+      "total_outstanding_inr": 120000,
+      "sources": [
+        "moneylender",
+        "moneylender",
+        "family"
+      ]
+    },
+    "past_defaults": true,
+    "household_size": 7,
+    "monthly_expenses_inr": 7000,
+    "irrigation_access": false,
+    "market_distance_km": 55,
+    "average_yield_quintals_per_acre": 2.8,
+    "self_reported_wealth_tier": "very poor"
+  },
+  {
+    "id": "v004",
+    "submitted_at": "2026-02-01T09:00:00Z",
+    "region": "Vidarbha, Maharashtra",
+    "land_size_acres": 8,
+    "land_ownership": "owned",
+    "crop_types": [
+      "cotton",
+      "wheat",
+      "vegetables"
+    ],
+    "annual_income_inr": 320000,
+    "income_regularity": "year-round",
+    "off_season_income": 0,
+    "total_savings_inr": 150000,
+    "assets": {
+      "livestock_value_inr": 120000,
+      "equipment_value_inr": 180000,
+      "vehicle_value_inr": 250000,
+      "gold_value_inr": 100000,
+      "property_other_inr": 200000
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 80000,
+      "sources": [
+        "bank"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 4,
+    "monthly_expenses_inr": 18000,
+    "irrigation_access": true,
+    "market_distance_km": 12,
+    "average_yield_quintals_per_acre": 7,
+    "self_reported_wealth_tier": "upper middle"
+  },
+  {
+    "id": "v005",
+    "submitted_at": "2026-02-05T11:30:00Z",
+    "region": "Vidarbha, Maharashtra",
+    "land_size_acres": 3,
+    "land_ownership": "shared",
+    "crop_types": [
+      "cotton",
+      "pulses"
+    ],
+    "annual_income_inr": 110000,
+    "income_regularity": "seasonal",
+    "off_season_income": 25000,
+    "total_savings_inr": 20000,
+    "assets": {
+      "livestock_value_inr": 40000,
+      "equipment_value_inr": 15000,
+      "vehicle_value_inr": 30000,
+      "gold_value_inr": 25000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 60000,
+      "sources": [
+        "microfinance"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 5,
+    "monthly_expenses_inr": 9500,
+    "irrigation_access": false,
+    "market_distance_km": 28,
+    "average_yield_quintals_per_acre": 4.1,
+    "self_reported_wealth_tier": "poor"
+  },
+  {
+    "id": "p001",
+    "submitted_at": "2026-01-20T07:00:00Z",
+    "region": "Ludhiana, Punjab",
+    "land_size_acres": 15,
+    "land_ownership": "owned",
+    "crop_types": [
+      "wheat",
+      "rice"
+    ],
+    "annual_income_inr": 850000,
+    "income_regularity": "year-round",
+    "off_season_income": 0,
+    "total_savings_inr": 500000,
+    "assets": {
+      "livestock_value_inr": 200000,
+      "equipment_value_inr": 600000,
+      "vehicle_value_inr": 450000,
+      "gold_value_inr": 300000,
+      "property_other_inr": 800000
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 200000,
+      "sources": [
+        "bank"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 5,
+    "monthly_expenses_inr": 35000,
+    "irrigation_access": true,
+    "market_distance_km": 8,
+    "average_yield_quintals_per_acre": 18,
+    "self_reported_wealth_tier": "wealthy"
+  },
+  {
+    "id": "p002",
+    "submitted_at": "2026-01-25T08:30:00Z",
+    "region": "Amritsar, Punjab",
+    "land_size_acres": 10,
+    "land_ownership": "owned",
+    "crop_types": [
+      "wheat",
+      "rice"
+    ],
+    "annual_income_inr": 620000,
+    "income_regularity": "year-round",
+    "off_season_income": 0,
+    "total_savings_inr": 280000,
+    "assets": {
+      "livestock_value_inr": 150000,
+      "equipment_value_inr": 400000,
+      "vehicle_value_inr": 350000,
+      "gold_value_inr": 200000,
+      "property_other_inr": 500000
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 150000,
+      "sources": [
+        "bank"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 6,
+    "monthly_expenses_inr": 28000,
+    "irrigation_access": true,
+    "market_distance_km": 5,
+    "average_yield_quintals_per_acre": 16.5,
+    "self_reported_wealth_tier": "upper middle"
+  },
+  {
+    "id": "p003",
+    "submitted_at": "2026-02-02T09:15:00Z",
+    "region": "Bathinda, Punjab",
+    "land_size_acres": 6,
+    "land_ownership": "owned",
+    "crop_types": [
+      "wheat",
+      "cotton"
+    ],
+    "annual_income_inr": 380000,
+    "income_regularity": "seasonal",
+    "off_season_income": 50000,
+    "total_savings_inr": 120000,
+    "assets": {
+      "livestock_value_inr": 80000,
+      "equipment_value_inr": 200000,
+      "vehicle_value_inr": 180000,
+      "gold_value_inr": 100000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 2,
+      "total_outstanding_inr": 250000,
+      "sources": [
+        "bank",
+        "microfinance"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 4,
+    "monthly_expenses_inr": 20000,
+    "irrigation_access": true,
+    "market_distance_km": 15,
+    "average_yield_quintals_per_acre": 14,
+    "self_reported_wealth_tier": "middle"
+  },
+  {
+    "id": "p004",
+    "submitted_at": "2026-02-08T10:00:00Z",
+    "region": "Fazilka, Punjab",
+    "land_size_acres": 4,
+    "land_ownership": "leased",
+    "crop_types": [
+      "wheat"
+    ],
+    "annual_income_inr": 220000,
+    "income_regularity": "seasonal",
+    "off_season_income": 40000,
+    "total_savings_inr": 60000,
+    "assets": {
+      "livestock_value_inr": 50000,
+      "equipment_value_inr": 80000,
+      "vehicle_value_inr": 100000,
+      "gold_value_inr": 50000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 80000,
+      "sources": [
+        "bank"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 5,
+    "monthly_expenses_inr": 15000,
+    "irrigation_access": true,
+    "market_distance_km": 22,
+    "average_yield_quintals_per_acre": 12,
+    "self_reported_wealth_tier": "lower middle"
+  },
+  {
+    "id": "p005",
+    "submitted_at": "2026-02-10T06:45:00Z",
+    "region": "Sangrur, Punjab",
+    "land_size_acres": 20,
+    "land_ownership": "owned",
+    "crop_types": [
+      "wheat",
+      "rice",
+      "sugarcane"
+    ],
+    "annual_income_inr": 1200000,
+    "income_regularity": "year-round",
+    "off_season_income": 0,
+    "total_savings_inr": 800000,
+    "assets": {
+      "livestock_value_inr": 350000,
+      "equipment_value_inr": 900000,
+      "vehicle_value_inr": 700000,
+      "gold_value_inr": 500000,
+      "property_other_inr": 1500000
+    },
+    "existing_loans": {
+      "count": 0,
+      "total_outstanding_inr": 0,
+      "sources": []
+    },
+    "past_defaults": false,
+    "household_size": 7,
+    "monthly_expenses_inr": 50000,
+    "irrigation_access": true,
+    "market_distance_km": 3,
+    "average_yield_quintals_per_acre": 20,
+    "self_reported_wealth_tier": "wealthy"
+  },
+  {
+    "id": "b001",
+    "submitted_at": "2026-01-28T09:30:00Z",
+    "region": "Madhubani, Bihar",
+    "land_size_acres": 1,
+    "land_ownership": "owned",
+    "crop_types": [
+      "rice"
+    ],
+    "annual_income_inr": 42000,
+    "income_regularity": "seasonal",
+    "off_season_income": 18000,
+    "total_savings_inr": 3000,
+    "assets": {
+      "livestock_value_inr": 12000,
+      "equipment_value_inr": 2000,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 5000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 2,
+      "total_outstanding_inr": 45000,
+      "sources": [
+        "moneylender",
+        "family"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 8,
+    "monthly_expenses_inr": 6000,
+    "irrigation_access": false,
+    "market_distance_km": 35,
+    "average_yield_quintals_per_acre": 4,
+    "self_reported_wealth_tier": "very poor"
+  },
+  {
+    "id": "b002",
+    "submitted_at": "2026-02-01T08:00:00Z",
+    "region": "Gaya, Bihar",
+    "land_size_acres": 0.5,
+    "land_ownership": "leased",
+    "crop_types": [
+      "rice",
+      "vegetables"
+    ],
+    "annual_income_inr": 30000,
+    "income_regularity": "irregular",
+    "off_season_income": 12000,
+    "total_savings_inr": 1500,
+    "assets": {
+      "livestock_value_inr": 8000,
+      "equipment_value_inr": 1000,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 3000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 25000,
+      "sources": [
+        "moneylender"
+      ]
+    },
+    "past_defaults": true,
+    "household_size": 6,
+    "monthly_expenses_inr": 5000,
+    "irrigation_access": false,
+    "market_distance_km": 48,
+    "average_yield_quintals_per_acre": 3,
+    "self_reported_wealth_tier": "very poor"
+  },
+  {
+    "id": "b003",
+    "submitted_at": "2026-02-05T07:30:00Z",
+    "region": "Bhagalpur, Bihar",
+    "land_size_acres": 2,
+    "land_ownership": "owned",
+    "crop_types": [
+      "rice",
+      "wheat"
+    ],
+    "annual_income_inr": 75000,
+    "income_regularity": "seasonal",
+    "off_season_income": 20000,
+    "total_savings_inr": 15000,
+    "assets": {
+      "livestock_value_inr": 30000,
+      "equipment_value_inr": 10000,
+      "vehicle_value_inr": 25000,
+      "gold_value_inr": 20000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 35000,
+      "sources": [
+        "microfinance"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 5,
+    "monthly_expenses_inr": 7500,
+    "irrigation_access": true,
+    "market_distance_km": 20,
+    "average_yield_quintals_per_acre": 5.5,
+    "self_reported_wealth_tier": "poor"
+  },
+  {
+    "id": "b004",
+    "submitted_at": "2026-02-09T10:45:00Z",
+    "region": "Patna, Bihar",
+    "land_size_acres": 3.5,
+    "land_ownership": "owned",
+    "crop_types": [
+      "rice",
+      "wheat",
+      "vegetables"
+    ],
+    "annual_income_inr": 140000,
+    "income_regularity": "year-round",
+    "off_season_income": 0,
+    "total_savings_inr": 55000,
+    "assets": {
+      "livestock_value_inr": 50000,
+      "equipment_value_inr": 40000,
+      "vehicle_value_inr": 80000,
+      "gold_value_inr": 45000,
+      "property_other_inr": 100000
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 60000,
+      "sources": [
+        "bank"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 4,
+    "monthly_expenses_inr": 10000,
+    "irrigation_access": true,
+    "market_distance_km": 10,
+    "average_yield_quintals_per_acre": 7,
+    "self_reported_wealth_tier": "middle"
+  },
+  {
+    "id": "b005",
+    "submitted_at": "2026-02-12T11:00:00Z",
+    "region": "Darbhanga, Bihar",
+    "land_size_acres": 0.8,
+    "land_ownership": "shared",
+    "crop_types": [
+      "rice"
+    ],
+    "annual_income_inr": 35000,
+    "income_regularity": "seasonal",
+    "off_season_income": 10000,
+    "total_savings_inr": 2000,
+    "assets": {
+      "livestock_value_inr": 10000,
+      "equipment_value_inr": 1500,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 4000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 2,
+      "total_outstanding_inr": 55000,
+      "sources": [
+        "moneylender",
+        "moneylender"
+      ]
+    },
+    "past_defaults": true,
+    "household_size": 9,
+    "monthly_expenses_inr": 5500,
+    "irrigation_access": false,
+    "market_distance_km": 60,
+    "average_yield_quintals_per_acre": 2.5,
+    "self_reported_wealth_tier": "very poor"
+  },
+  {
+    "id": "a001",
+    "submitted_at": "2026-01-30T08:00:00Z",
+    "region": "Guntur, Andhra Pradesh",
+    "land_size_acres": 4,
+    "land_ownership": "owned",
+    "crop_types": [
+      "rice",
+      "cotton"
+    ],
+    "annual_income_inr": 210000,
+    "income_regularity": "seasonal",
+    "off_season_income": 35000,
+    "total_savings_inr": 80000,
+    "assets": {
+      "livestock_value_inr": 70000,
+      "equipment_value_inr": 50000,
+      "vehicle_value_inr": 120000,
+      "gold_value_inr": 80000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 70000,
+      "sources": [
+        "bank"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 5,
+    "monthly_expenses_inr": 14000,
+    "irrigation_access": true,
+    "market_distance_km": 12,
+    "average_yield_quintals_per_acre": 8,
+    "self_reported_wealth_tier": "middle"
+  },
+  {
+    "id": "a002",
+    "submitted_at": "2026-02-03T09:30:00Z",
+    "region": "Kurnool, Andhra Pradesh",
+    "land_size_acres": 1.5,
+    "land_ownership": "leased",
+    "crop_types": [
+      "sugarcane",
+      "vegetables"
+    ],
+    "annual_income_inr": 95000,
+    "income_regularity": "seasonal",
+    "off_season_income": 20000,
+    "total_savings_inr": 10000,
+    "assets": {
+      "livestock_value_inr": 20000,
+      "equipment_value_inr": 8000,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 15000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 2,
+      "total_outstanding_inr": 80000,
+      "sources": [
+        "microfinance",
+        "family"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 4,
+    "monthly_expenses_inr": 8000,
+    "irrigation_access": false,
+    "market_distance_km": 25,
+    "average_yield_quintals_per_acre": 5,
+    "self_reported_wealth_tier": "poor"
+  },
+  {
+    "id": "a003",
+    "submitted_at": "2026-02-07T10:15:00Z",
+    "region": "East Godavari, Andhra Pradesh",
+    "land_size_acres": 12,
+    "land_ownership": "owned",
+    "crop_types": [
+      "rice",
+      "sugarcane",
+      "vegetables"
+    ],
+    "annual_income_inr": 650000,
+    "income_regularity": "year-round",
+    "off_season_income": 0,
+    "total_savings_inr": 350000,
+    "assets": {
+      "livestock_value_inr": 180000,
+      "equipment_value_inr": 350000,
+      "vehicle_value_inr": 400000,
+      "gold_value_inr": 250000,
+      "property_other_inr": 600000
+    },
+    "existing_loans": {
+      "count": 1,
+      "total_outstanding_inr": 100000,
+      "sources": [
+        "bank"
+      ]
+    },
+    "past_defaults": false,
+    "household_size": 6,
+    "monthly_expenses_inr": 30000,
+    "irrigation_access": true,
+    "market_distance_km": 6,
+    "average_yield_quintals_per_acre": 12,
+    "self_reported_wealth_tier": "wealthy"
+  },
+  {
+    "id": "a004",
+    "submitted_at": "2026-02-11T08:45:00Z",
+    "region": "Anantapur, Andhra Pradesh",
+    "land_size_acres": 2,
+    "land_ownership": "owned",
+    "crop_types": [
+      "cotton",
+      "pulses"
+    ],
+    "annual_income_inr": 72000,
+    "income_regularity": "seasonal",
+    "off_season_income": 15000,
+    "total_savings_inr": 8000,
+    "assets": {
+      "livestock_value_inr": 18000,
+      "equipment_value_inr": 5000,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 12000,
+      "property_other_inr": 0
+    },
+    "existing_loans": {
+      "count": 3,
+      "total_outstanding_inr": 110000,
+      "sources": [
+        "moneylender",
+        "moneylender",
+        "microfinance"
+      ]
+    },
+    "past_defaults": true,
+    "household_size": 7,
+    "monthly_expenses_inr": 7500,
+    "irrigation_access": false,
+    "market_distance_km": 38,
+    "average_yield_quintals_per_acre": 3.5,
+    "self_reported_wealth_tier": "very poor"
+  },
+  {
+    "id": "a005",
+    "submitted_at": "2026-02-14T09:00:00Z",
+    "region": "Krishna, Andhra Pradesh",
+    "land_size_acres": 6,
+    "land_ownership": "owned",
+    "crop_types": [
+      "rice",
+      "vegetables"
+    ],
+    "annual_income_inr": 340000,
+    "income_regularity": "year-round",
+    "off_season_income": 0,
+    "total_savings_inr": 180000,
+    "assets": {
+      "livestock_value_inr": 100000,
+      "equipment_value_inr": 150000,
+      "vehicle_value_inr": 200000,
+      "gold_value_inr": 120000,
+      "property_other_inr": 300000
+    },
+    "existing_loans": {
+      "count": 0,
+      "total_outstanding_inr": 0,
+      "sources": []
+    },
+    "past_defaults": false,
+    "household_size": 4,
+    "monthly_expenses_inr": 18000,
+    "irrigation_access": true,
+    "market_distance_km": 10,
+    "average_yield_quintals_per_acre": 10,
+    "self_reported_wealth_tier": "upper middle"
+  },
+  {
+    "id": "b229582e-e865-4294-a959-ca049500b98f",
+    "submitted_at": "2026-04-27T17:17:39.014Z",
+    "region": "Vidarbha, Maharashtra",
+    "land_size_acres": 2.5,
+    "land_ownership": "owned",
+    "crop_types": [
+      "wheat",
+      "rice"
+    ],
+    "annual_income_inr": 150000,
+    "income_regularity": "seasonal",
+    "off_season_income": 0,
+    "total_savings_inr": 0,
+    "assets": {
+      "livestock_value_inr": 0,
+      "equipment_value_inr": 0,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 0,
+      "property_other_inr": 0
+    },
+    "monthly_expenses_inr": 0,
+    "household_size": 1,
+    "existing_loans": {
+      "count": 0,
+      "total_outstanding_inr": 0,
+      "sources": []
+    },
+    "past_defaults": false,
+    "irrigation_access": true,
+    "market_distance_km": 0,
+    "average_yield_quintals_per_acre": 0
+  },
+  {
+    "id": "d8b368ad-e75f-4161-87b3-9fe45145c56f",
+    "submitted_at": "2026-04-27T17:28:03.911Z",
+    "region": "Test Region",
+    "land_size_acres": 3,
+    "land_ownership": "owned",
+    "crop_types": [],
+    "annual_income_inr": 200000,
+    "income_regularity": "seasonal",
+    "off_season_income": 0,
+    "total_savings_inr": 0,
+    "assets": {
+      "livestock_value_inr": 0,
+      "equipment_value_inr": 0,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 0,
+      "property_other_inr": 0
+    },
+    "monthly_expenses_inr": 0,
+    "household_size": 1,
+    "existing_loans": {
+      "count": 0,
+      "total_outstanding_inr": 0,
+      "sources": []
+    },
+    "past_defaults": false,
+    "irrigation_access": true,
+    "market_distance_km": 0,
+    "average_yield_quintals_per_acre": 0
+  },
+  {
+    "id": "bdb61b6f-3d21-460c-be54-81831038d603",
+    "submitted_at": "2026-04-27T18:38:09.342Z",
+    "region": "Lock Test A",
+    "land_size_acres": 1,
+    "land_ownership": "owned",
+    "crop_types": [],
+    "annual_income_inr": 50000,
+    "income_regularity": "seasonal",
+    "off_season_income": 0,
+    "total_savings_inr": 0,
+    "assets": {
+      "livestock_value_inr": 0,
+      "equipment_value_inr": 0,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 0,
+      "property_other_inr": 0
+    },
+    "monthly_expenses_inr": 0,
+    "household_size": 1,
+    "existing_loans": {
+      "count": 0,
+      "total_outstanding_inr": 0,
+      "sources": []
+    },
+    "past_defaults": false,
+    "irrigation_access": true,
+    "market_distance_km": 0,
+    "average_yield_quintals_per_acre": 0
+  },
+  {
+    "id": "087a18ca-17a4-44ac-8983-5a68b919248e",
+    "submitted_at": "2026-04-27T18:38:09.345Z",
+    "region": "Lock Test B",
+    "land_size_acres": 2,
+    "land_ownership": "owned",
+    "crop_types": [],
+    "annual_income_inr": 60000,
+    "income_regularity": "seasonal",
+    "off_season_income": 0,
+    "total_savings_inr": 0,
+    "assets": {
+      "livestock_value_inr": 0,
+      "equipment_value_inr": 0,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 0,
+      "property_other_inr": 0
+    },
+    "monthly_expenses_inr": 0,
+    "household_size": 1,
+    "existing_loans": {
+      "count": 0,
+      "total_outstanding_inr": 0,
+      "sources": []
+    },
+    "past_defaults": false,
+    "irrigation_access": true,
+    "market_distance_km": 0,
+    "average_yield_quintals_per_acre": 0
+  },
+  {
+    "id": "0d3b6a82-8923-4eac-9d8f-81f0dcb959dd",
+    "submitted_at": "2026-04-27T19:00:09.534Z",
+    "region": "Vidarbha, Maharashtra",
+    "land_size_acres": 3,
+    "land_ownership": "owned",
+    "crop_types": [],
+    "annual_income_inr": 120000,
+    "income_regularity": "seasonal",
+    "off_season_income": 0,
+    "total_savings_inr": 0,
+    "assets": {
+      "livestock_value_inr": 0,
+      "equipment_value_inr": 0,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 0,
+      "property_other_inr": 0
+    },
+    "monthly_expenses_inr": 8000,
+    "household_size": 4,
+    "existing_loans": {
+      "count": 0,
+      "total_outstanding_inr": 0,
+      "sources": []
+    },
+    "past_defaults": false,
+    "irrigation_access": true,
+    "market_distance_km": 0,
+    "average_yield_quintals_per_acre": 0
+  },
+  {
+    "id": "4b6e908c-21da-4d32-b909-04d9000d6544",
+    "submitted_at": "2026-04-27T19:32:44.884Z",
+    "region": "Punjab",
+    "land_size_acres": 50,
+    "land_ownership": "owned",
+    "crop_types": [],
+    "annual_income_inr": 10000000,
+    "income_regularity": "seasonal",
+    "off_season_income": 0,
+    "total_savings_inr": 0,
+    "assets": {
+      "livestock_value_inr": 0,
+      "equipment_value_inr": 0,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 0,
+      "property_other_inr": 0
+    },
+    "monthly_expenses_inr": 0,
+    "household_size": 1,
+    "existing_loans": {
+      "count": 0,
+      "total_outstanding_inr": 0,
+      "sources": []
+    },
+    "past_defaults": false,
+    "irrigation_access": false,
+    "market_distance_km": 0,
+    "average_yield_quintals_per_acre": 0,
+    "_quality_flag": "outlier",
+    "_quality_warnings": [
+      "Income ₹1,00,00,000 is an extreme high outlier for this region (regional range: ₹3,80,000 – ₹8,50,000).",
+      "Land 50 acres is an extreme outlier for this region (regional range: 6.0 – 15.0 acres)."
+    ]
+  },
+  {
+    "id": "b12d1d18-0571-444b-afa1-96df82820e1a",
+    "submitted_at": "2026-04-27T19:41:32.955Z",
+    "region": "Punjab",
+    "land_size_acres": 50,
+    "land_ownership": "owned",
+    "crop_types": [],
+    "annual_income_inr": 100000000,
+    "income_regularity": "seasonal",
+    "off_season_income": 0,
+    "total_savings_inr": 0,
+    "assets": {
+      "livestock_value_inr": 0,
+      "equipment_value_inr": 0,
+      "vehicle_value_inr": 0,
+      "gold_value_inr": 0,
+      "property_other_inr": 0
+    },
+    "monthly_expenses_inr": 0,
+    "household_size": 1,
+    "existing_loans": {
+      "count": 0,
+      "total_outstanding_inr": 0,
+      "sources": []
+    },
+    "past_defaults": false,
+    "irrigation_access": false,
+    "market_distance_km": 0,
+    "average_yield_quintals_per_acre": 0,
+    "_quality_flag": "outlier",
+    "_quality_warnings": [
+      "Income ₹10,00,00,000 is an extreme high outlier for this region (regional range: ₹3,80,000 – ₹12,00,000)."
+    ]
+  }
+]

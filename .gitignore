@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Environment files (contain secrets)
+.env
+client/.env
+
+# Firebase service account key files
+fairloan-gdsc-firebase-adminsdk-*.json
+*-firebase-adminsdk-*.json
+
+# Build output
+client/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Uploads (temporary PII)
+server/uploads/*
+!server/uploads/.gitkeep
